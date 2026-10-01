@@ -1,4 +1,4 @@
-# robots.txt — Reformas Los Gallos (reformaschiclana.es)
+# robots.txt — Reformas Trocadero (reformaspuertoreal.es)
 
 # ── Crawlers de IA (GEO: permitir explícitamente) ──
 User-agent: GPTBot
@@ -34,4 +34,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://reformaschiclana.es/sitemap.xml
+Sitemap: https://reformaspuertoreal.es/sitemap.xml
