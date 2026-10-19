@@ -262,3 +262,21 @@ body.legal,.legal-wrap{background:var(--hueso)}
   .site-footer-cols{grid-template-columns:1fr}
   .page-hero{padding:56px 0 60px}
 }
+
+/* ── topbar-actions: botón llamada + hamburguesa (heredado del layout interior) ── */
+.topbar-actions{display:flex;align-items:center;gap:12px}
+.phonelink{display:none;align-items:center;gap:7px;color:var(--terracota);font-weight:600;font-size:.92rem;
+  white-space:nowrap;text-decoration:none;padding:9px 18px;border:1px solid var(--terracota);border-radius:2px;
+  letter-spacing:.03em;transition:.2s;background:transparent}
+.phonelink svg{width:16px;height:16px;fill:currentColor;flex-shrink:0}
+.phonelink:hover{background:var(--terracota);color:#fff}
+.menu-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:38px;height:38px;
+  background:none;border:1px solid var(--arena);border-radius:2px;cursor:pointer;padding:0 8px}
+.menu-toggle span{display:block;width:100%;height:2px;background:var(--tinta);transition:.2s}
+.menu-toggle:hover{border-color:var(--terracota)}
+@media(max-width:900px){
+  .phonelink{display:inline-flex}
+  .menu-toggle{display:flex}
+}
+.menu-links.open{display:flex;position:fixed;inset:0;background:var(--hueso);flex-direction:column;
+  justify-content:center;align-items:center;gap:26px;font-size:1.25rem;z-index:99}
